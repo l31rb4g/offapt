@@ -8,6 +8,8 @@ mkdir $parent/$pkg 2> /dev/null
 
 cd $parent/$pkg
 
+echo -e '\n>>> Loading dependency list, please wait...'
+
 deplist=$(apt-get install -y --reinstall --print-uris $1 | grep "^'http" | cut -d"'" -f2)
 
 for dep in $deplist; do
