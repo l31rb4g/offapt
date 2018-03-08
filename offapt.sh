@@ -3,8 +3,9 @@
 pkg=$1
 parent='.debs'
 
-mkdir $parent
-mkdir $parent/$pkg
+mkdir $parent 2> /dev/null
+mkdir $parent/$pkg 2> /dev/null
+
 cd $parent/$pkg
 
 deplist=$(apt-get install --reinstall --print-uris $1 | grep "^'http" | cut -d"'" -f2)
