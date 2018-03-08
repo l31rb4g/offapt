@@ -8,7 +8,7 @@ mkdir $parent/$pkg 2> /dev/null
 
 cd $parent/$pkg
 
-deplist=$(apt-get install --reinstall --print-uris $1 | grep "^'http" | cut -d"'" -f2)
+deplist=$(apt-get install -y --reinstall --print-uris $1 | grep "^'http" | cut -d"'" -f2)
 
 for dep in $deplist; do
 	wget $dep
