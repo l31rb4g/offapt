@@ -8,13 +8,11 @@ Install packages offline using APT
 
 `./offapt.sh [package name]`
 
-You can run this command as many times as you want. The packages will be downloaded as .deb files.
-
-This command will create a .debs folder, with one subfolder for each package downloaded.
+You can run this command as many times as you want. This command will create a .debs folder, with one subfolder for each package downloaded. The packages will be downloaded with all its dependencies.
 
 ---
 
-2. Tar the .debs folder and send it to the machine without internet access
+2. Tar the .debs folder and send it to the machine that does not have internet access
 
 `tar -cvf debs.tar .debs`
 
@@ -31,3 +29,6 @@ This command will create a .debs folder, with one subfolder for each package dow
 `cd .debs`
 
 `./install_all.sh`
+
+
+You can also install each package individually by running the install.sh file inside its folder.
