@@ -2,7 +2,7 @@
 Install packages offline using APT
 ---
 
-Usage:
+### Usage:
 
 1. On a machine that has internet access:
 $ ./offapt.sh [package name]
