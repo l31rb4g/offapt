@@ -8,6 +8,8 @@ Install packages offline using APT
 
 `./offapt.sh [package name]`
 
+You can run this command as many times as you want. The packages will be downloaded as .deb files.
+
 ---
 
 This will create a .debs/ folder.
