@@ -26,9 +26,7 @@ You can run this command as many times as you want. This command will create a .
 
 4. Install all packages
 
-`cd .debs`
-
-`./install_all.sh`
+`cd .debs && ./install_all.sh`
 
 
 You can also install each package individually by running the install.sh file inside its folder.
