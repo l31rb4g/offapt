@@ -1,5 +1,5 @@
 # offapt
-Install packages offline using APT
+Install APT packages offline
 ---
 
 ### Usage:
