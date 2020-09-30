@@ -1,5 +1,5 @@
 # offapt
-Install APT packages offline
+Install Debian/Ubuntu APT packages offline
 ---
 
 ### Usage:
